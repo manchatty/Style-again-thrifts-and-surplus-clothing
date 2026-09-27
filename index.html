@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STYLE AGAIN THRIFTS AND SURPLUS CLOTHING</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">FREE SHIPPING ABOVE ₹999 • LIMITED DROPS • AUTHENTIC THRIFT</div>
+<header>
+  <a class="logo" href="#">STYLE AGAIN<span>.</span></a>
+  <nav><a href="#shop">Shop</a><a href="#drops">Drops</a><a href="#about">About</a></nav>
+  <div class="head-actions"><button onclick="openSearch()">⌕</button><button onclick="showOrders()">Orders</button><button onclick="showWishlist()">♡ <b id="wishCount">0</b></button><button onclick="showCart()">Bag <b id="cartCount">0</b></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">STYLE AGAIN</p><h1>NEW STYLE.<br>NEW LIFE.</h1><p>A curated rotation of vintage, streetwear and one-of-one pieces.</p><a class="btn light" href="#shop">SHOP THE DROP</a></div>
+  <div class="hero-art"><span>STYLE AGAIN<br>THRIFTS</span></div>
+</section>
+
+
+
+<section id="shop" class="shop">
+  <div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>SHOP ALL</h2></div><button class="filter-btn" onclick="openFilters()">FILTER +</button></div>
+  <div class="chips"><button class="active" onclick="filterProducts('all',this)">All</button><button onclick="filterProducts('T-Shirts',this)">T-Shirts</button><button onclick="filterProducts('Hoodies',this)">Hoodies</button><button onclick="filterProducts('Jackets',this)">Jackets</button><button onclick="filterProducts('Pants',this)">Pants</button></div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="trust">
+  <div><strong>01</strong><span>ONE-OF-ONE<br>FINDS</span></div><div><strong>02</strong><span>QUALITY<br>CHECKED</span></div><div><strong>03</strong><span>FAST PAN-INDIA<br>SHIPPING</span></div><div><strong>04</strong><span>EASY<br>SUPPORT</span></div>
+</section>
+
+<section id="about" class="about"><p class="eyebrow">WHY STYLE AGAIN?</p><h2>WEAR SOMETHING<br>THAT DOESN'T<br>FEEL MASS PRODUCED.</h2><p>Every piece is selected for character, condition and everyday wearability. Once it’s gone, it’s gone.</p></section>
+</main>
+
+<footer><div class="logo">STYLE AGAIN<span>.</span></div><p>© 2026 STYLE AGAIN THRIFTS AND SURPLUS CLOTHING. All rights reserved.</p><div class="footer-links"><a href="https://wa.me/918137082694" target="_blank">WhatsApp Support</a><a href="admin.html">Admin Login</a></div></footer>
+
+<div class="overlay" id="overlay" onclick="closePanel(event)">
+  <aside class="panel" id="panel"></aside>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
